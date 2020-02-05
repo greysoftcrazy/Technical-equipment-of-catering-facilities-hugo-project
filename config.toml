@@ -1,18 +1,23 @@
-baseurl = "https://example.org/"
+baseurl = "https://app.ytk.edu.ru/food-organizations"
 languageCode = "en-us"
+defaultContentLanguage = "ru"
 metadataformat = "yaml"
-title = "Alabaster"
-theme = "hugo-alabaster-theme"
+defaultContentLanguageInSubdir= true
+title = "Организация питания"
+theme = "hugo-theme-learn"
 
 disqusShortname = ""
 googleAnalytics = ""
 
-[params]
-	name = "Alabaster"
-	description = "A documentation theme for Hugo."
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-	github_user   = "digitalcraftsman"
-	github_repo   = "hugo-alabaster-theme"
+[params]
+	name = "greysoft"
+	description = "Technical equipment of catering facilities - hugo project."
+
+	github_user   = "greysoftcrazy"
+	github_repo   = "https://github.com/greysoftcrazy/Technical-equipment-of-catering-facilities-hugo-project"
 	github_banner = true
 
 	custom_css = []
@@ -20,6 +25,14 @@ googleAnalytics = ""
 
 	highlightjs = "css/highlight.css"
 	favicon = "favicon.ico"
+    themeVariant = "mine"
+	showVisitedLinks = true
+    disableBreadcrumb = false
+    disableNextPrev = false
+	disableAssetsBusting = true
+	disableInlineCopyToClipBoard = true
+    ordersectionsby = "weight"
+    disableShortcutsTitle = false
 
 [params.sidebar]
 	logo = "favicon.ico"
@@ -33,5 +46,5 @@ googleAnalytics = ""
 	show_relations = true
 
 [params.footer]
-	copyright = "[Digitalcraftsman](https://github.com/digitalcraftsman)"
+	copyright = "[greysoft](https://github.com/greysoftcrazy)"
 	show_powered_by = true
